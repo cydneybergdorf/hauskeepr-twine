@@ -104,22 +104,113 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="HausKeepr 1" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="352177d5-7e9d-46a2-a9b5-57cdb476cadb" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.email {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.95em;
-  background: #ffffff;
-  color: #000000;
-  border: 1px solid #cccccc;
-  border-left: 4px solid #666666;
-  padding: 1em;
-  margin: 1em 0;
-  white-space: pre-wrap;
+	<tw-storydata name="HausKeepr 1" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="352177d5-7e9d-46a2-a9b5-57cdb476cadb" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+  --hk-navy-deep: #0B1630;
+  --hk-navy: #1C2859;
+  --hk-navy-mid: #0F1D40;
+  --hk-peri: #A8B2E4;
+  --hk-peri-dim: #6B76A8;
+  --hk-chart: #C2D448;
+}
+
+html, body {
+  background-color: var(--hk-navy) !important;
+  font-family: 'Nunito', sans-serif;
+}
+
+#story {
+  margin: 2em auto;
+  max-width: 50em;
 }
 
 #passages {
   margin-top: 0;
   padding-top: 0;
+  background-color: var(--hk-navy);
+  border: 1px solid rgba(168, 178, 228, 0.18);
+  border-radius: 14px;
+  padding: 1.75em 2em;
 }
+
+.passage {
+  color: var(--hk-peri);
+}
+
+.passage h1, .passage h2, .passage h3, .passage h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: #EEF0FA;
+  letter-spacing: -0.02em;
+}
+
+#story-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: #EEF0FA;
+}
+
+#story-author {
+  color: var(--hk-peri);
+}
+
+.passage a,
+a.link-internal,
+a.macro-link {
+  color: var(--hk-chart);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.passage a:hover,
+a.link-internal:hover,
+a.macro-link:hover {
+  color: #d7e88a;
+}
+
+a.link-visited {
+  color: var(--hk-peri);
+}
+
+button {
+  background-color: var(--hk-navy-mid);
+  color: #EEF0FA;
+  border: 1px solid var(--hk-peri-dim);
+}
+
+button:hover {
+  background-color: var(--hk-peri-dim);
+  border-color: var(--hk-peri);
+}
+
+#ui-bar {
+  background-color: var(--hk-navy-deep);
+  border-right: 1px solid rgba(168, 178, 228, 0.18);
+}
+
+#menu li a {
+  color: var(--hk-peri);
+}
+
+#menu li a:hover {
+  background-color: var(--hk-navy-mid);
+  color: #EEF0FA;
+}
+
+.email {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95em;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-left: 4px solid var(--hk-peri-dim);
+  padding: 1em;
+  margin: 1em 0;
+  white-space: pre-wrap;
+  border-radius: 4px;
+}
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">/* 
 Images are stored in the /images folder next to the published HTML.
 Example path: images/hauskeepr_ad.jpg
@@ -435,8 +526,7 @@ The advertisements, emails, offers, and narrative presented here are narrative c
     
     &quot;N:Emma leaves.&quot;,
 
-	&quot;N:&lt;br&gt;[[She’s right. I should take a closer look-&gt;Investigate]] &lt;br&gt;
-	&quot;N:[[Tech hysteria has existed since the dawn of progress. I&#39;ll contact her later, but I have to write this review, first.-&gt;Ignore]]&quot;
+	&quot;N:&lt;br&gt;[[She’s right. I should take a closer look-&gt;Investigate]]&lt;br&gt;or&lt;br&gt;[[Tech hysteria has existed since the dawn of progress. I&#39;ll contact her later, but I have to write this review, first.-&gt;Ignore]]&quot;
 ]&gt;&gt;
 
 &lt;div id=&quot;seq-friend1&quot;&gt;
